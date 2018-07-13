@@ -101,7 +101,7 @@ This endpoint retrieves a list of all departure airports in CitizenPlane's stock
 
 `GET https://booking-api.citizenplane.com/airports/origins`
 
-<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#!/airports/getAirportsOrigins" target="_blank">click here</a>.
+<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#!/airports/getAirportsOrigins" target="_blank">click here</a>.</aside>
 
 ## Retrieve a list of arrival airports
 
@@ -158,7 +158,7 @@ This endpoint retrieves a list of all arrival airports associated to a specific 
 
 `GET https://booking-api.citizenplane.com/airports/destinations`
 
-<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#!/airports/getAirportsDestinations" target="_blank">click here</a>.
+<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#!/airports/getAirportsDestinations" target="_blank">click here</a>.</aside>
 
 ### URL parameters
 
@@ -231,7 +231,7 @@ This endpoint retrieves the details of all open flights in CitizenPlane's stock 
 
 `GET https://booking-api.citizenplane.com/flights`
 
-<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#/flights" target="_blank">click here</a>.
+<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#/flights" target="_blank">click here</a>.</aside>
 
 ### URL parameters
 
@@ -326,11 +326,12 @@ const createRequest = async () => {
 This endpoint creates a booking request on a specific flight identified by its id. A booking request holds a number of seats passed in the request payload for **fifteen minutes**. Seat price and infant price won't be subject to any changes during this time period and will match the information sent by the `/flights` request.
 
 <aside class ="notice">Should the booking not be confirmed, the request would be canceled and the seats put back in sales.</aside>
+
 ### HTTP request
 
 `POST https://booking-api.citizenplane.com`/requests``
 
-<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#/requests" target="_blank">click here</a>.
+<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#/requests" target="_blank">click here</a>.</aside>
 
 ### URL parameters
 
@@ -340,6 +341,7 @@ Parameter | Type | Status | Description
 flight_id | *string* | **required** | The flight id returned by the `/flights` GET request.
 passengers | *object* | **required** | An object containing the passenger count breakdown by age for this booking request. <a href="#request-passengers-info">See child arguments</a>.
 
+<br/>
 <br/>
 
 #### <table id="request-passengers-info">
@@ -534,7 +536,7 @@ This endpoint confirms the previously created booking request and sends the book
 `POST https://booking-api.citizenplane.com/bookings`
 
 
-<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#/bookings" target="_blank">click here</a>.
+<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#/bookings" target="_blank">click here</a>.</aside>
 
 ### URL parameters
 
@@ -556,6 +558,9 @@ passenger_count | *string* | **required** | Total passengers on this booking (in
 infant_count | *string* | **required** | Total infants on this booking (< 2yo).
 passengers | *object* | **required** | An object containing personal information for each passenger on this booking. <a href="#booking-passengers-info">See child arguments</a>.
 card_data | *object* | **required** | An object containing the customer's card information to process the booking's payment. <a href="#booking-card-info">See child arguments</a>.
+
+<br/>
+<br/>
 
 #### <table id="booking-passengers-info">
   <caption><b>passengers child arguments</b></caption>
@@ -628,6 +633,9 @@ card_data | *object* | **required** | An object containing the customer's card i
     </tr>
   </tbody>
 </table>
+
+<br/>
+<br/>
 
 #### <table id="booking-card-info">
   <caption><b>card_data child arguments</b></caption>
