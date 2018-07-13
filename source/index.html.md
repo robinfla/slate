@@ -329,7 +329,7 @@ This endpoint creates a booking request on a specific flight identified by its i
 
 ### HTTP request
 
-`POST https://booking-api.citizenplane.com`/requests``
+`POST https://booking-api.citizenplane.com`/requests`
 
 <aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#/requests" target="_blank">click here</a>.</aside>
 
