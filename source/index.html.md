@@ -7,7 +7,8 @@ language_tabs: # must be one of https://git.io/vQNgJ
 
 toc_footers:
 - <a href="https://citizenplane.com/" target="_blank">Sign Up for a CitizenPlane account</a>
-- CitizenPlane 2017-2018 - all rights reserved
+- CitizenPlane 2017-2018
+- All rights reserved
 
 includes:
 - errors
