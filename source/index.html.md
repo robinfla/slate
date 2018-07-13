@@ -6,7 +6,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
 - javascript--nodejs: Node
 
 toc_footers:
-- <a href="https://citizenplane.com/" target="_blank">Sign Up for a CitizenPlane account</a>
+- <a href="mailto:tech@citizenplane.com" target="_blank">Contact CitizenPlane</a>
 - CitizenPlane 2017-2018
 - All rights reserved
 
@@ -22,7 +22,7 @@ search: true
 
 The default API endpoint is <a href="https://booking-api.citizenplane.com" target="_blank"> booking-api.citizenplane.com</a>. JSON is returned by all API responses, included errors.
 
-To make the API as explorable as possible, accounts have test and live API tokens. API tokens can be obtained after signup on <a href="https://citizenplane.com/" target="_blank">CitizenPlane</a>.
+To make the API as explorable as possible, accounts have test and live API tokens. API tokens can be obtained after contacting us at <a href="mailto:tech@citizenplane.com" target="_blank">tech@citizenplane.com</a>.
 
 If you wish to test the different endpoints detailed below, we have a dedicated page allowing you to perform requests with your parameters. An API token will be required for each call. To test our endpoints, <a href="https://booking-api.citizenplane.com/documentation" target="_blank">click here</a>.
 
@@ -101,6 +101,8 @@ This endpoint retrieves a list of all departure airports in CitizenPlane's stock
 
 `GET https://booking-api.citizenplane.com/airports/origins`
 
+<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#!/airports/getAirportsOrigins" target="_blank">click here</a>.
+
 ## Retrieve a list of arrival airports
 
 > Example request
@@ -155,6 +157,8 @@ This endpoint retrieves a list of all arrival airports associated to a specific 
 ### HTTP request
 
 `GET https://booking-api.citizenplane.com/airports/destinations`
+
+<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#!/airports/getAirportsDestinations" target="_blank">click here</a>.
 
 ### URL parameters
 
@@ -226,6 +230,8 @@ This endpoint retrieves the details of all open flights in CitizenPlane's stock 
 ### HTTP request
 
 `GET https://booking-api.citizenplane.com/flights`
+
+<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#/flights" target="_blank">click here</a>.
 
 ### URL parameters
 
@@ -323,6 +329,8 @@ This endpoint creates a booking request on a specific flight identified by its i
 ### HTTP request
 
 `POST https://booking-api.citizenplane.com`/requests``
+
+<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#/requests" target="_blank">click here</a>.
 
 ### URL parameters
 
@@ -519,11 +527,14 @@ const createBooking = async () => {
 
 This endpoint confirms the previously created booking request and sends the booking information along with card information to CitizenPlane's API in order to process the booking and the associated payment. Once the booking is created, the customer will receive a confirmation by email along with the ticket(s). 
 
-<aside class="notice">If the payment fails for any reason, the request associated to this booking will be considered as `ABORTED` and the process is to be started again.</aside>
+<aside class="notice">If the payment fails for any reason, the request associated to this booking will be considered as **ABORTED** and the process is to be started again.</aside>
 
 ### HTTP request
 
 `POST https://booking-api.citizenplane.com/bookings`
+
+
+<aside class="success">To test this endpoint, <a href="https://booking-api.citizenplane.com/documentation#/bookings" target="_blank">click here</a>.
 
 ### URL parameters
 
